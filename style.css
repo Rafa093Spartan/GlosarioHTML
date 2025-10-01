@@ -1,16 +1,14 @@
-/* --- Estilos Generales --- */
 :root {
-    --bg-color: #282c34; /* Fondo oscuro */
-    --text-color: #e0e0e0; /* Texto claro */
-    --primary-color: #61dafb; /* Azul cian para acentos */
-    --secondary-color: #cddb2b; /* Verde-amarillo para contraste */
-    --card-bg: #3c424a; /* Fondo de tarjetas/secciones */
-    --border-color: #4a505b; /* Color de borde */
-    --code-bg: #1e1e1e; /* Fondo para bloques de código */
+    --bg-color: #282c34; 
+    --text-color: #e0e0e0; 
+    --primary-color: #61dafb; 
+    --secondary-color: #cddb2b; 
+    --card-bg: #3c424a; 
+    --border-color: #4a505b; 
+    --code-bg: #1e1e1e; 
     --font-main: 'Roboto', sans-serif;
     --font-code: 'Roboto Mono', monospace;
 }
-
 body {
     font-family: var(--font-main);
     background-color: var(--bg-color);
@@ -22,12 +20,10 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
 *, *::before, *::after {
     box-sizing: inherit;
 }
 
-/* --- Encabezado Principal --- */
 .main-header {
     background-color: var(--card-bg);
     padding: 30px 20px;
@@ -48,15 +44,14 @@ body {
     color: var(--text-color);
 }
 
-/* --- Contenedor Principal (Main) --- */
+
 .container {
     max-width: 1000px;
     margin: 30px auto;
     padding: 0 20px;
-    flex-grow: 1; /* Para que ocupe el espacio restante */
+    flex-grow: 1; 
 }
 
-/* --- Categorías de Elementos --- */
 .category {
     background-color: var(--card-bg);
     border-radius: 8px;
@@ -74,7 +69,6 @@ body {
     padding-bottom: 10px;
 }
 
-/* --- Listas de Definición (dl, dt, dd) para cada Elemento --- */
 dl {
     margin: 0;
 }
@@ -87,7 +81,7 @@ dt {
     margin-bottom: 8px;
     padding-left: 10px;
     border-left: 4px solid var(--primary-color);
-    background-color: rgba(97, 218, 251, 0.1); /* Ligero fondo azul */
+    background-color: rgba(97, 218, 251, 0.1); 
 }
 
 dd {
@@ -105,13 +99,12 @@ dd strong {
     color: var(--secondary-color);
 }
 
-/* --- Estilos para Bloques de Código --- */
 pre {
     background-color: var(--code-bg);
-    color: #f8f8f2; /* Color de texto para código */
+    color: #f8f8f2; 
     padding: 15px;
     border-radius: 6px;
-    overflow-x: auto; /* Permite scroll horizontal para código largo */
+    overflow-x: auto; 
     font-family: var(--font-code);
     font-size: 0.9em;
     line-height: 1.4;
@@ -120,10 +113,9 @@ pre {
 
 code {
     font-family: var(--font-code);
-    color: #f1fa8c; /* Color amarillo para tags en línea */
+    color: #f1fa8c; 
 }
 
-/* Estilos específicos para la explicación de listas anidadas */
 dd ul {
     list-style-type: disc;
     margin-left: 20px;
@@ -134,7 +126,6 @@ dd ul li {
     margin-bottom: 5px;
 }
 
-/* --- Pie de Página --- */
 .main-footer {
     background-color: var(--card-bg);
     color: var(--text-secondary);
@@ -145,7 +136,7 @@ dd ul li {
     font-size: 0.9em;
 }
 
-/* --- Responsividad --- */
+
 @media (max-width: 768px) {
     .main-header h1 {
         font-size: 2.5em;
