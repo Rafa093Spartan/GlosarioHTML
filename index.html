@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet | Guía Rápida</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>HTML Cheat Sheet 🚀</h1>
+        <p>Tu guía rápida para los elementos HTML esenciales.</p>
+    </header>
+
+    <main class="container">
+        <section class="category">
+            <h2>Estructura Básica del Documento</h2>
+            <dl>
+                <dt>&lt;!DOCTYPE html&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Es la declaración de tipo de documento. Debe ser la primera línea del HTML. Indica al navegador que el documento es HTML5.</p>
+                    <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;html&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Es el elemento raíz de cualquier página web HTML. Contiene todo el contenido de la página.</p>
+                    <pre><code>&lt;html lang=&quot;es&quot;&gt;&lt;/html&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;head&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Contiene metadatos sobre el documento (información no visible en la página, como el título, enlaces a CSS, scripts, etc.).</p>
+                    <pre><code>&lt;head&gt;\n  &lt;meta charset=&quot;UTF-8&quot;&gt;\n  &lt;title&gt;Mi Página&lt;/title&gt;\n&lt;/head&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;body&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Contiene todo el contenido visible de la página web (texto, imágenes, videos, enlaces, etc.).</p>
+                    <pre><code>&lt;body&gt;\n  &lt;h1&gt;Hola Mundo&lt;/h1&gt;\n&lt;/body&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;title&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Define el título de la página que aparece en la pestaña del navegador o en los resultados de búsqueda. Va dentro de <code>&lt;head&gt;</code>.</p>
+                    <pre><code>&lt;title&gt;Título de mi Pestaña&lt;/title&gt;</code></pre>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="category">
+            <h2>Estructura Semántica y Layout</h2>
+            <dl>
+                <dt>&lt;header&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Representa contenido introductorio o un grupo de enlaces de navegación. Usualmente contiene el logotipo, el título del sitio, y la navegación principal.</p>
+                    <pre><code>&lt;header&gt;\n  &lt;img src=&quot;logo.png&quot; alt=&quot;Logo&quot;&gt;\n  &lt;h1&gt;Mi Sitio&lt;/h1&gt;\n&lt;/header&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;nav&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Define un bloque de enlaces de navegación. Se usa para la navegación principal del sitio.</p>
+                    <pre><code>&lt;nav&gt;\n  &lt;ul&gt;\n    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;\n    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Acerca de&lt;/a&gt;&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/nav&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;main&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Representa el contenido dominante del <code>&lt;body&gt;</code>. Solo debe haber un elemento <code>&lt;main&gt;</code> por documento.</p>
+                    <pre><code>&lt;main&gt;\n  &lt;h2&gt;Contenido Principal&lt;/h2&gt;\n  &lt;p&gt;Aquí va el texto relevante.&lt;/p&gt;\n&lt;/main&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;aside&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Representa una sección de contenido relacionada indirectamente con el contenido principal. Se usa para barras laterales, bloques de anuncios, etc.</p>
+                    <pre><code>&lt;aside&gt;\n  &lt;h3&gt;Artículos Relacionados&lt;/h3&gt;\n  &lt;ul&gt;...&lt;/ul&gt;\n&lt;/aside&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;footer&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Contiene información sobre el documento o su sección más cercana (autor, derechos de autor, enlaces relacionados, etc.).</p>
+                    <pre><code>&lt;footer&gt;\n  &lt;p&gt;&amp;copy; 2025 Mi Empresa&lt;/p&gt;\n&lt;/footer&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;div&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Un contenedor genérico de nivel de bloque que no tiene significado semántico por sí mismo. Se usa para agrupar elementos y aplicar estilos CSS.</p>
+                    <pre><code>&lt;div class=&quot;card&quot;&gt;\n  &lt;h3&gt;Título&lt;/h3&gt;\n  &lt;p&gt;Contenido.&lt;/p&gt;\n&lt;/div&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;span&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Un contenedor genérico en línea (inline) que no tiene significado semántico. Se usa para aplicar estilos CSS a una parte del texto u otros elementos en línea.</p>
+                    <pre><code>&lt;p&gt;Este es un texto con una &lt;span style=&quot;color: blue;&quot;&gt;parte azul&lt;/span&gt;.&lt;/p&gt;</code></pre>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="category">
+            <h2>Texto y Encabezados</h2>
+            <dl>
+                <dt>&lt;p&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Define un párrafo de texto. Es el elemento básico para bloques de texto en HTML.</p>
+                    <pre><code>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;h1&gt; a &lt;h6&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Definen encabezados HTML. <code>&lt;h1&gt;</code> es el más importante (título principal) y <code>&lt;h6&gt;</code> el menos importante (subtítulo de menor jerarquía).</p>
+                    <pre><code>&lt;h1&gt;Título Principal&lt;/h1&gt;\n&lt;h3&gt;Subtítulo&lt;/h3&gt;</code></pre>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="category">
+            <h2>Enlaces y Listas</h2>
+            <dl>
+                <dt>&lt;a&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Crea un hiperenlace (link) a otras páginas web, archivos, ubicaciones dentro de la misma página, o direcciones de correo electrónico.</p>
+                    <pre><code>&lt;a href=&quot;https://www.google.com&quot; target=&quot;_blank&quot;&gt;Ir a Google&lt;/a&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;ol&gt;, &lt;ul&gt;, &lt;dl&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong>
+                        <ul>
+                            <li><code>&lt;ol&gt;</code> (Ordered List): Lista ordenada (numerada).</li>
+                            <li><code>&lt;ul&gt;</code> (Unordered List): Lista no ordenada (con viñetas).</li>
+                            <li><code>&lt;dl&gt;</code> (Description List): Lista de descripción (pares término-descripción).</li>
+                        </ul>
+                    </p>
+                    <pre><code>&lt;ol&gt;\n  &lt;li&gt;Paso 1&lt;/li&gt;\n&lt;/ol&gt;\n\n&lt;ul&gt;\n  &lt;li&gt;Elemento&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;dl&gt;\n  &lt;dt&gt;Término&lt;/dt&gt;\n  &lt;dd&gt;Descripción&lt;/dd&gt;\n&lt;/dl&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;li&gt;, &lt;dt&gt;, &lt;dd&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Elementos de lista.
+                        <ul>
+                            <li><code>&lt;li&gt;</code> (List Item): Elemento de una lista (<code>&lt;ol&gt;</code> o <code>&lt;ul&gt;</code>).</li>
+                            <li><code>&lt;dt&gt;</code> (Definition Term): Término a definir en una lista de descripción (<code>&lt;dl&gt;</code>).</li>
+                            <li><code>&lt;dd&gt;</code> (Definition Description): Descripción del término en una lista de descripción (<code>&lt;dl&gt;</code>).</li>
+                        </ul>
+                    </p>
+                    <pre><code>&lt;ul&gt;\n  &lt;li&gt;Elemento de lista&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;dl&gt;\n  &lt;dt&gt;HTML&lt;/dt&gt;\n  &lt;dd&gt;Lenguaje de Marcado de Hipertexto&lt;/dd&gt;\n&lt;/dl&gt;</code></pre>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="category">
+            <h2>Tablas</h2>
+            <dl>
+                <dt>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong>
+                        <ul>
+                            <li><code>&lt;table&gt;</code>: Contenedor para toda la tabla.</li>
+                            <li><code>&lt;tr&gt;</code> (Table Row): Fila de la tabla.</li>
+                            <li><code>&lt;td&gt;</code> (Table Data): Celda de datos estándar.</li>
+                            <li><code>&lt;th&gt;</code> (Table Header): Celda de encabezado (usualmente negrita y centrada).</li>
+                        </ul>
+                    </p>
+                    <pre><code>&lt;table&gt;\n  &lt;tr&gt;\n    &lt;th&gt;Encabezado&lt;/th&gt;\n    &lt;th&gt;Encabezado 2&lt;/th&gt;\n  &lt;/tr&gt;\n  &lt;tr&gt;\n    &lt;td&gt;Dato 1&lt;/td&gt;\n    &lt;td&gt;Dato 2&lt;/td&gt;\n  &lt;/tr&gt;\n&lt;/table&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Agrupan semánticamente las filas de una tabla.
+                        <ul>
+                            <li><code>&lt;thead&gt;</code>: Contiene el contenido de encabezado (usualmente <code>&lt;th&gt;</code>).</li>
+                            <li><code>&lt;tbody&gt;</code>: Contiene el contenido principal del cuerpo de la tabla.</li>
+                            <li><code>&lt;tfoot&gt;</code>: Contiene el contenido del pie de tabla (sumarios, totales).</li>
+                        </ul>
+                    </p>
+                    <pre><code>&lt;table&gt;\n  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Producto&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;\n  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Manzana&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;\n  &lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Total&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;\n&lt;/table&gt;</code></pre>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="category">
+            <h2>Contenido Multimedia</h2>
+            <dl>
+                <dt>&lt;img&gt;, &lt;audio&gt;, &lt;video&gt;, &lt;source&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong>
+                        <ul>
+                            <li><code>&lt;img&gt;</code>: Incrusta una imagen en el documento. Atributos clave: <code>src</code> (ruta), <code>alt</code> (texto alternativo).</li>
+                            <li><code>&lt;audio&gt;</code>: Incrusta contenido de audio. Atributos: <code>controls</code>, <code>autoplay</code>, <code>loop</code>.</li>
+                            <li><code>&lt;video&gt;</code>: Incrusta un reproductor de video. Atributos: <code>controls</code>, <code>width</code>, <code>height</code>, <code>poster</code>.</li>
+                            <li><code>&lt;source&gt;</code>: Especifica múltiples fuentes de medios para <code>&lt;audio&gt;</code> o <code>&lt;video&gt;</code>, permitiendo al navegador elegir la más compatible.</li>
+                        </ul>
+                    </p>
+                    <pre><code>&lt;img src=&quot;imagen.jpg&quot; alt=&quot;Descripción&quot;&gt;\n\n&lt;audio controls&gt;\n  &lt;source src=&quot;audio.mp3&quot; type=&quot;audio/mpeg&quot;&gt;\n&lt;/audio&gt;\n\n&lt;video controls width=&quot;300&quot;&gt;\n  &lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;\n&lt;/video&gt;</code></pre>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="category">
+            <h2>Formularios</h2>
+            <dl>
+                <dt>&lt;form&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Crea una sección que contiene controles interactivos para que el usuario envíe información (ej. campos de texto, botones, casillas de verificación).</p>
+                    <pre><code>&lt;form action=&quot;/submit&quot; method=&quot;post&quot;&gt;\n  &lt;!-- Elementos del formulario --&gt;\n&lt;/form&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;input&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Crea un control interactivo para formularios. El atributo <code>type</code> define su comportamiento (text, password, checkbox, radio, submit, etc.).</p>
+                    <pre><code>&lt;input type=&quot;text&quot; name=&quot;nombre&quot; placeholder=&quot;Tu nombre&quot;&gt;\n&lt;input type=&quot;password&quot; name=&quot;pass&quot;&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;select&gt;, &lt;option&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong>
+                        <ul>
+                            <li><code>&lt;select&gt;</code>: Crea un control que proporciona un menú de opciones.</li>
+                            <li><code>&lt;option&gt;</code>: Define una opción dentro de un elemento <code>&lt;select&gt;</code> o <code>&lt;datalist&gt;</code>.</li>
+                        </ul>
+                    </p>
+                    <pre><code>&lt;select name=&quot;fruta&quot;&gt;\n  &lt;option value=&quot;manzana&quot;&gt;Manzana&lt;/option&gt;\n  &lt;option value=&quot;pera&quot;&gt;Pera&lt;/option&gt;\n&lt;/select&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;textarea&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Crea un control de edición de texto multi-línea. Útil para comentarios largos o descripciones.</p>
+                    <pre><code>&lt;textarea name=&quot;mensaje&quot; rows=&quot;4&quot; cols=&quot;30&quot;&gt;Escribe aquí...&lt;/textarea&gt;</code></pre>
+                </dd>
+
+                <dt>&lt;label&gt;</dt>
+                <dd>
+                    <p><strong>Funcionalidad:</strong> Asocia un texto con un elemento de formulario (ej. <code>&lt;input&gt;</code>). Mejora la accesibilidad: al hacer clic en la etiqueta, el foco se va al control asociado.</p>
+                    <pre><code>&lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;\n&lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;</code></pre>
+                </dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Hecho con ❤️ para aprender HTML | &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
